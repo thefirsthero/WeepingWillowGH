@@ -1,7 +1,9 @@
 var toBill = document.getElementsByClassName( 'toBill' )
-//console.log( toBill )
+console.log( toBill )
 var amt = document.getElementsByClassName( 'amt' )
+console.log( amt )
 var roomType = document.getElementsByClassName( 'roomType' )
+console.log( roomType )
 for ( let index = 0; index < toBill.length; index++ ) {
     let book = toBill[ index ]
     book.addEventListener( 'click', () => {
