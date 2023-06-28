@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let money = container.querySelector('.amt').textContent.split('/')[0].trim();
         let room = container.querySelector('.roomType').textContent.trim();
         let details = {
-          money: money,
+          money: money.substring(1), // removing R from number sent to billing.html
           room: room
         };
         localStorage.setItem('amount', JSON.stringify(details));
