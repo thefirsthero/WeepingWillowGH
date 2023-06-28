@@ -1,24 +1,19 @@
-var toBill = document.getElementsByClassName( 'toBill' )
-console.log( toBill )
-var amt = document.getElementsByClassName( 'amt' )
-console.log( amt )
-var roomType = document.getElementsByClassName( 'roomType' )
-console.log( roomType )
-for ( let index = 0; index < toBill.length; index++ ) {
-    let book = toBill[ index ]
-    book.addEventListener( 'click', () => {
-        let money = amt[ index ].textContent.split( '/' )
-        money = money[ 0 ]
+document.addEventListener('DOMContentLoaded', function () {
+    var bookButtons = document.getElementsByClassName('toBill');
+    console.log(bookButtons)
 
-        let room = roomType[ index ].textContent.trim()
-
-        let details = {
-            money: money,
-            room: room
-        }
-        //console.log( details )
-
-        localStorage.setItem( 'amount', JSON.stringify( details ) )
-        location.href = 'billing.html'
-    } )
-}
+    for (let index = 0; index < bookButtons.length; index++) {
+        let button = bookButtons[index];
+        button.addEventListener('click', function () {
+            let container = button.parentNode.parentNode;
+            let money = container.querySelector('.amt').textContent.split('/')[0].trim();
+            let room = container.querySelector('.roomType').textContent.trim();
+            let details = {
+                money: money,
+                room: room
+            };
+            localStorage.setItem('amount', JSON.stringify(details));
+            location.href = 'billing.html';
+        });
+    }
+});
