@@ -2,13 +2,20 @@
  The code for my guest house website that enables users to book rooms.
  
  ## Tech Stacks Used:
- 
+ ### Implementation:
 - **HTML**
 - **CSS**
 - **Bootstrap**
 - **JavaScript**
 - **ES6**
 - **Chart.js**
+
+### Hosting:
+- **AWS-S3**
+- **AWS-CloudFront**
+- **AWS-Route 53**
+- **AWS-CodePipeline**
+- **AWS-Certificate Manager**
 
 ### Index Page:
 - Overview of the hotel and the services- rooms, royal facilities, restaurant, news & events. 
@@ -33,5 +40,5 @@
 
 
  
-<!-- ## Designed By Dhananjay verma -->
+<!-- ## Designed By VUkosi Moyane -->
 
