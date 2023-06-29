@@ -2,238 +2,272 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
-    <script src="rooms.js"></script>
-    <link rel="stylesheet" type="text/css" href="rooms.css">
-    <title>Rooms</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <style>
-        .roomDescription {
-            white-space: normal;
-            word-wrap: break-word;
-        }
-    </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+  <script src="rooms.js"></script>
+  <link rel="stylesheet" type="text/css" href="rooms.css">
+  <title>Rooms</title>
+  <style>
+    .roomDescription {
+      white-space: normal;
+      word-wrap: break-word;
+    }
+  </style>
 </head>
 
 <body>
-    <!--==============================Top NAV start==========================-->
-    <div class="roombg container-fluid">
-        <ul class="pt-4">
-            <ul class="nav nav-pills ml-5 navl">
-                <li class="logo">
-                    <i class="fab fa-pied-piper logo_color"></i>Weeping Willow
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html" style="color: white;">Home</a>
-                </li>
-                <li>
-                  <a class="nav-link" href="rooms.html" style="color: white;">Rooms</a>
-                </li>
-                <li>
-                  <a class="nav-link" href="blog.html" style="color: white;">Blog</a>
-                </li>
-                <li>
-                  <a class="nav-link" href="#about" style="color: white;">About Us</a>
-                </li>                  
-        </ul>
-        <p class="note shadow">Weeping Willow Rooms</p>
-        <p id="cursive">Great quality and value for money <i class="fas fa-check-circle"></i></p>
+  <!-------------------------------Top Nav Start------------------------------>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <i class="fab fa-pied-piper"></i> Weeping Willow
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="rooms.html">Rooms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+      </ul>
     </div>
-    <div style="height: 80px;"></div>
-    <!--==============================Top NAV end==========================-->
+  </nav>
+  <!--============================Top Nav End===========================-->
 
-    <!--=======================Rooms Start======================-->
+  <!--==============================Room Cards start==========================-->
+  <!--=======================Rooms Start======================-->
 
-    <div class="container">
-        <h2 class="text-center mt-5">Our Rooms</h2>
-        <div class="row">
-            <!-- Room 5 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div id="carouselSingleRoom" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselSingleRoom" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselSingleRoom" data-slide-to="1"></li>
-                            <li data-target="#carouselSingleRoom" data-slide-to="2"></li>
-                            <li data-target="#carouselSingleRoom" data-slide-to="3"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Resources/Room5/1.jpg" class="card-img-top" alt="Room 5 Image 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Resources/Room5/2.jpg" class="card-img-top" alt="Room 5 Image 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Resources/Room5/3.jpg" class="card-img-top" alt="Room 5 Image 3">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Resources/Room5/4.jpg" class="card-img-top" alt="Room 5 Image 4">
-                            </div>
+  <div class="container">
+    <p></p>
+    <div class="row">
+        <!-- Room 5 -->
+        <div class="col-md-4">
+            <div class="card">
+                <div id="carouselSingleRoom" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselSingleRoom" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselSingleRoom" data-slide-to="1"></li>
+                        <li data-target="#carouselSingleRoom" data-slide-to="2"></li>
+                        <li data-target="#carouselSingleRoom" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Resources/Room5/1.jpg" class="card-img-top" alt="Room 5 Image 1">
                         </div>
-                        <a class="carousel-control-prev" href="#carouselSingleRoom" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselSingleRoom" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                        <div class="carousel-item">
+                            <img src="Resources/Room5/2.jpg" class="card-img-top" alt="Room 5 Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Resources/Room5/3.jpg" class="card-img-top" alt="Room 5 Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Resources/Room5/4.jpg" class="card-img-top" alt="Room 5 Image 4">
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            <h2 class="mist roomType">Deluxe Double Room</h2>
-                        <p class="card-text roomDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            sagittis risus et est dapibus, ut scelerisque magna malesuada.
-                        </p>
-                        <p class="card-text">
-                            <strong>Adults:</strong> 4<br>
-                            <strong>Capacity:</strong> Max Capacity 3<br>
-                            <strong>Facilities:</strong> Closet with hangers, HD...<br>
-                            <strong>Price:</strong> <h3 class="amt">&#82;750<span
-                                class="text-secondary" style="font-size: 20px;">/night</span></h3>
-                        </p>
-                        <div class="text-center">
-                            <button type="button" class="btn text-light btn-lg bg-info text-center mt-5 btn-block gradient toBill">Book Now </button>
-                        </div>
+                    <a class="carousel-control-prev" href="#carouselSingleRoom" role="button"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselSingleRoom" role="button"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        <h2 class="mist roomType">Deluxe Double Room</h2>
+                    <p class="card-text roomDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        sagittis risus et est dapibus, ut scelerisque magna malesuada.
+                    </p>
+                    <p class="card-text">
+                        <strong>Adults:</strong> 4<br>
+                        <strong>Capacity:</strong> Max Capacity 3<br>
+                        <strong>Facilities:</strong> Closet with hangers, HD...<br>
+                        <strong>Price:</strong> <h3 class="amt">&#82;750<span
+                            class="text-secondary" style="font-size: 20px;">/night</span></h3>
+                    </p>
+                    <div class="text-center">
+                        <button type="button" class="btn text-light btn-lg bg-info text-center mt-5 btn-block gradient toBill">Book Now </button>
                     </div>
                 </div>
             </div>
-
-            <!-- Room 6 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div id="carouselDoubleRoom" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselDoubleRoom" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselDoubleRoom" data-slide-to="1"></li>
-                            <li data-target="#carouselDoubleRoom" data-slide-to="2"></li>
-                            <li data-target="#carouselDoubleRoom" data-slide-to="3"></li>
-                            <li data-target="#carouselDoubleRoom" data-slide-to="4"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Resources/Room6/1.jpg" class="card-img-top" alt="Room 6 Image 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Resources/Room6/2.jpg" class="card-img-top" alt="Room 6 Image 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Resources/Room6/3.jpg" class="card-img-top" alt="Room 6 Image 3">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Resources/Room6/4.jpg" class="card-img-top" alt="Room 6 Image 4">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Resources/Room6/5.jpg" class="card-img-top" alt="Room 6 Image 5">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselDoubleRoom" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselDoubleRoom" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            <h2 class="mist roomType">Loft Double Room</h2>
-                        <p class="card-text roomDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            sagittis risus et est dapibus, ut scelerisque magna malesuada.
-                        </p>
-                        <p class="card-text">
-                            <strong>Adults:</strong> 4<br>
-                            <strong>Capacity:</strong> Max Capacity 3<br>
-                            <strong>Facilities:</strong> Closet with hangers, HD...<br>
-                            <strong>Price:</strong> <h3 class="amt">&#82;650<span
-                                class="text-secondary" style="font-size: 20px;">/night</span></h3>
-                        </p>
-                        <div class="text-center">
-                            <button type="button" class="btn text-light btn-lg bg-info text-center mt-5 btn-block gradient toBill">Book Now </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Room 3 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div id="carouselFamilyRoom" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselFamilyRoom" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselFamilyRoom" data-slide-to="1"></li>
-                            <li data-target="#carouselFamilyRoom" data-slide-to="2"></li>
-                            <li data-target="#carouselFamilyRoom" data-slide-to="3"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Resources/Room3/1.jpg" class="card-img-top" alt="Room 3 Image 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Resources/Room3/2.jpg" class="card-img-top" alt="Room 3 Image 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Resources/Room3/3.jpg" class="card-img-top" alt="Room 3 Image 3">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Resources/Room3/4.jpg" class="card-img-top" alt="Room 3 Image 4">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselFamilyRoom" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselFamilyRoom" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            <h2 class="mist roomType">Standard Double Room</h2>
-                        <p class="card-text roomDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            sagittis risus et est dapibus, ut scelerisque magna malesuada.
-                        </p>
-                        <p class="card-text">
-                            <strong>Adults:</strong> 4<br>
-                            <strong>Capacity:</strong> Max Capacity 3<br>
-                            <strong>Facilities:</strong> Closet with hangers, HD...<br>
-                            <strong>Price:</strong> <h3 class="amt">&#82;450<span
-                                class="text-secondary" style="font-size: 20px;">/night</span></h3>
-                        </p>
-                        <div class="text-center">
-                            <button type="button" class="btn text-light btn-lg bg-info text-center mt-5 btn-block gradient toBill">Book Now </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
+
+        <!-- Room 6 -->
+        <div class="col-md-4">
+            <div class="card">
+                <div id="carouselDoubleRoom" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselDoubleRoom" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselDoubleRoom" data-slide-to="1"></li>
+                        <li data-target="#carouselDoubleRoom" data-slide-to="2"></li>
+                        <li data-target="#carouselDoubleRoom" data-slide-to="3"></li>
+                        <li data-target="#carouselDoubleRoom" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Resources/Room6/1.jpg" class="card-img-top" alt="Room 6 Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Resources/Room6/2.jpg" class="card-img-top" alt="Room 6 Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Resources/Room6/3.jpg" class="card-img-top" alt="Room 6 Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Resources/Room6/4.jpg" class="card-img-top" alt="Room 6 Image 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Resources/Room6/5.jpg" class="card-img-top" alt="Room 6 Image 5">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselDoubleRoom" role="button"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselDoubleRoom" role="button"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        <h2 class="mist roomType">Loft Double Room</h2>
+                    <p class="card-text roomDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        sagittis risus et est dapibus, ut scelerisque magna malesuada.
+                    </p>
+                    <p class="card-text">
+                        <strong>Adults:</strong> 4<br>
+                        <strong>Capacity:</strong> Max Capacity 3<br>
+                        <strong>Facilities:</strong> Closet with hangers, HD...<br>
+                        <strong>Price:</strong> <h3 class="amt">&#82;650<span
+                            class="text-secondary" style="font-size: 20px;">/night</span></h3>
+                    </p>
+                    <div class="text-center">
+                        <button type="button" class="btn text-light btn-lg bg-info text-center mt-5 btn-block gradient toBill">Book Now </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Room 3 -->
+        <div class="col-md-4">
+            <div class="card">
+                <div id="carouselFamilyRoom" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselFamilyRoom" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselFamilyRoom" data-slide-to="1"></li>
+                        <li data-target="#carouselFamilyRoom" data-slide-to="2"></li>
+                        <li data-target="#carouselFamilyRoom" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Resources/Room3/1.jpg" class="card-img-top" alt="Room 3 Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Resources/Room3/2.jpg" class="card-img-top" alt="Room 3 Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Resources/Room3/3.jpg" class="card-img-top" alt="Room 3 Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Resources/Room3/4.jpg" class="card-img-top" alt="Room 3 Image 4">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselFamilyRoom" role="button"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselFamilyRoom" role="button"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        <h2 class="mist roomType">Standard Double Room</h2>
+                    <p class="card-text roomDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        sagittis risus et est dapibus, ut scelerisque magna malesuada.
+                    </p>
+                    <p class="card-text">
+                        <strong>Adults:</strong> 4<br>
+                        <strong>Capacity:</strong> Max Capacity 3<br>
+                        <strong>Facilities:</strong> Closet with hangers, HD...<br>
+                        <strong>Price:</strong> <h3 class="amt">&#82;450<span
+                            class="text-secondary" style="font-size: 20px;">/night</span></h3>
+                    </p>
+                    <div class="text-center">
+                        <button type="button" class="btn text-light btn-lg bg-info text-center mt-5 btn-block gradient toBill">Book Now </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+</div>
 
-    <!--=======================Rooms End======================-->
+<!--=======================Rooms End======================-->
+  <!--==============================Room Cards end==========================-->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!--==============================Footer start==========================-->
+  <footer class="page-footer font-small bg-dark text-white mt-5">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12 py-5">
+          <div class="flex-center">
+            <a href="#" class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+            </a>
+            <a href="#" class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+            </a>
+            <a href="#" class="ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+            </a>
+            <a href="#" class="li-ic">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+            </a>
+            <a href="#" class="yt-ic">
+              <i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+            </a>
+            <a href="#" class="slack-ic">
+              <i class="fab fa-slack fa-lg white-text fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-3">
+      &copy; 2023 Your Hotel. All rights reserved.
+    </div>
+  </footer>
+  <!--==============================Footer end==========================-->
 </body>
 
 </html>
