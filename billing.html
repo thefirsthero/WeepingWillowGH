@@ -9,6 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/moment/moment.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="billing.js"></script>
   <link rel="stylesheet" type="text/css" href="billing.css" />
   <title>Weeping Willow Guest House</title>
 </head>
@@ -51,7 +52,7 @@
             <div class="form-header">
               <h1>Make your reservation</h1>
             </div>
-            <form>
+            <form id="booking-form">
               <div class="form-group">
                 <input class="form-control" type="text" placeholder="Name, Surname" name="full-name" required>
                 <span class="form-label">Full name</span>
@@ -64,7 +65,7 @@
                 <div class="col-md-4">
                   <div class="form-group">
                     <select class="form-control" required name="rooms">
-                      <option value="" selected hidden>no of rooms</option>
+                      <option value="" selected hidden>Number of rooms</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -76,7 +77,7 @@
                 <div class="col-md-4">
                   <div class="form-group">
                     <select class="form-control" required id="adults" onchange="updateChildren()" name="adults">
-                      <option value="" selected hidden>no of adults</option>
+                      <option value="" selected hidden>Number of adults</option>
                       <option>1</option>
                       <option>2</option>
                     </select>
@@ -87,7 +88,7 @@
                 <div class="col-md-4">
                   <div class="form-group">
                     <select class="form-control" required id="children" disabled name="children">
-                      <option value="" selected hidden>no of children</option>
+                      <option value="" selected hidden>Number of children</option>
                       <option value="0">0</option>
                       <option value="1">1</option>
                     </select>
@@ -120,30 +121,6 @@
     </div>
   </div>
   <!-- booking system end -->
-
-  <script>
-    function updateChildren() {
-      var adults = document.getElementById("adults").value;
-      var childrenSelect = document.getElementById("children");
-
-      if (adults === "1") {
-        childrenSelect.disabled = false;
-        childrenSelect.innerHTML = '<option value="" selected hidden>Number of children</option>' +
-          '<option value="0">0</option>' +
-          '<option value="1">1</option>' +
-          '<option value="2">2</option>';
-      } else if (adults === "2") {
-        childrenSelect.disabled = false;
-        childrenSelect.innerHTML = '<option value="" selected hidden>Number of children</option>' +
-          '<option value="0">0</option>' +
-          '<option value="1">1</option>';
-      }
-    }
-  </script>
-
-
-
-<script src="billing.js"></script>
 
   <!-------------Footer Start--------------->
   <footer class="mt-5">

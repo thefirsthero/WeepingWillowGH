@@ -3,36 +3,83 @@ $(document).ready(function () {
     $('input[name="date-range"]').daterangepicker();
   
     // Handle form submission
-    $('.submit-btn').click(function (event) {
+    $('#booking-form').submit(function (event) {
       event.preventDefault();
+  
+      // Validate form fields
       var fullName = $('input[name="full-name"]').val();
-      var dateRange = $('input[name="date-range"]').val();
-      var rooms = $('select[name="rooms"]').val();
-      var adults = $('select[name="adults"]').val();
-      var children = $('select[name="children"]').val();
       var email = $('input[name="email"]').val();
       var phone = $('input[name="phone"]').val();
   
-      var bookingDetails = {
-        fullName: fullName,
-        dateRange: dateRange,
-        rooms: rooms,
-        adults: adults,
-        children: children,
-        email: email,
-        phone: phone,
-      };
+      var isValid = true; // Track overall form validity
   
-      console.log(bookingDetails);
+      if (!isValidFullName(fullName)) {
+        alert('Please enter a valid full name.');
+        isValid = false;
+      }
   
-      // Perform any additional processing or validation as needed
+      if (!isValidEmail(email)) {
+        alert('Please enter a valid email address.');
+        isValid = false;
+      }
   
-      // Save the booking details to localStorage or perform other actions
-      // Example: localStorage.setItem('bookingDetails', JSON.stringify(bookingDetails));
+      if (!isValidPhone(phone)) {
+        alert('Please enter a valid phone number.');
+        isValid = false;
+      }
   
-      // Display success message or redirect to another page
-      alert('Booking successful!');
-      window.location.href = 'index.html';
+      if (isValid) {
+        // Redirect to the index page on successful submission
+        window.location.href = 'index.html';
+      }
     });
   });
+  
+  // Function to validate full name
+  function isValidFullName(fullName) {
+    // Check if the full name is not empty
+    if (fullName.trim() === '') {
+      return false;
+    }
+  
+    // Add any additional validation rules for the full name if needed
+  
+    return true;
+  }
+  
+  // Function to validate email address
+  function isValidEmail(email) {
+    // Regular expression pattern for email validation
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+    // Check if the email matches the pattern
+    return emailPattern.test(email);
+  }
+  
+  // Function to validate phone number
+  function isValidPhone(phone) {
+    // Regular expression pattern for phone number validation
+    var phonePattern = /^\d{10}$/;
+  
+    // Check if the phone number matches the pattern
+    return phonePattern.test(phone);
+  }
+  
+  function updateChildren() {
+    var adults = document.getElementById("adults").value;
+    var childrenSelect = document.getElementById("children");
+  
+    if (adults === "1") {
+      childrenSelect.disabled = false;
+      childrenSelect.innerHTML = '<option value="" selected hidden>Number of children</option>' +
+        '<option value="0">0</option>' +
+        '<option value="1">1</option>' +
+        '<option value="2">2</option>';
+    } else if (adults === "2") {
+      childrenSelect.disabled = false;
+      childrenSelect.innerHTML = '<option value="" selected hidden>Number of children</option>' +
+        '<option value="0">0</option>' +
+        '<option value="1">1</option>';
+    }
+  }
   
