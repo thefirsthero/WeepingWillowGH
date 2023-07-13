@@ -29,8 +29,8 @@ $(document).ready(function () {
     }
 
     if (isValid) {
-      // Redirect to the index page on successful submission
-      window.location.href = 'index.html';
+      // Submit the form
+      $('#booking-form').unbind('submit').submit();
     }
   });
 });
