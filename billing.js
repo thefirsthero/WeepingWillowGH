@@ -1,3 +1,8 @@
+$(window).on('pageshow', function () {
+  // Reset the form and clear input values
+  $('#booking-form')[0].reset();
+});
+
 $(document).ready(function () {
   // Initialize date range picker
   $('input[name="date-range"]').daterangepicker();
