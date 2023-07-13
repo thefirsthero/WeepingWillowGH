@@ -32,6 +32,12 @@ body {
   /* white-space: nowrap; */
 }
 
+.room-price-label {
+  flex-grow: 1;
+  overflow: hidden;
+  /* white-space: nowrap; */
+}
+
 .booking-form {
   position: relative;
   max-width: 642px;

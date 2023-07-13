@@ -68,20 +68,39 @@ function isValidPhone(phone) {
 function updateChildren() {
   var adults = document.getElementById("adults").value;
   var childrenSelect = document.getElementById("children");
+  var roomPrice = document.querySelector('.room-price-label');
 
+  // Set prices based on the selected number of adults and children
   if (adults === "1") {
     childrenSelect.disabled = false;
     childrenSelect.innerHTML = '<option value="" selected hidden>No. of Children</option>' +
       '<option value="0">0</option>' +
       '<option value="1">1</option>' +
       '<option value="2">2</option>';
+
+    // Calculate and display prices
+    roomPrice.textContent = "Price: R" + calculateRoomPrice();
   } else if (adults === "2") {
     childrenSelect.disabled = false;
     childrenSelect.innerHTML = '<option value="" selected hidden>No. of Children</option>' +
       '<option value="0">0</option>' +
       '<option value="1">1</option>';
+
+    // Calculate and display prices
+    roomPrice.textContent = "Price: R" + calculateRoomPrice();
   }
 }
+
+
+// Function to calculate the price for the room
+function calculateRoomPrice() {
+  // Adjust this logic according to your price calculation requirements
+  var details = localStorage.getItem('amount');
+  details = JSON.parse(details);
+  var roomPrice = details.money; // Example room price
+  return roomPrice;
+}
+
 
 // Populate and display the room type based on the selected number of rooms
 function displayRoomType() {
@@ -97,5 +116,21 @@ function displayRoomType() {
   roomTypeLabel.textContent = roomType;
 }
 
+// Populate and display the room type based on the selected number of rooms
+function setRoomPrice() {
+
+  var details = localStorage.getItem('amount');
+  details = JSON.parse(details);
+
+  if (details && details.money) {
+    var transactionAmount = details.money;
+  }
+  console.log(details.money)
+
+  // Set transaction amount
+  $('#transaction-amount').val(transactionAmount);
+}
+
 // Call the displayRoomType function on page load
 displayRoomType();
+setRoomPrice();

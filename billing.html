@@ -68,8 +68,8 @@
                   <div class="form-group">
                     <select class="form-control" required id="adults" onchange="updateChildren()" name="adults">
                       <option value="" selected hidden>No. of adults</option>
-                      <option>1</option>
-                      <option>2</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
                     </select>
                     <span class="select-arrow"></span>
                     <span class="form-label">Adults</span>
@@ -86,7 +86,16 @@
                     <span class="form-label">Children</span>
                   </div>
                 </div>
-              </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <span class="form-control room-price-label"></span>
+                    <div class="room-type-container">
+                      <span class="form-label">Room Price</span>
+                    </div>
+                    <span class="price-label" id="room-price"></span>
+                  </div>
+                </div>
+              </div>              
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -108,7 +117,7 @@
                   <input type="hidden" name="return_url" value="https://wwgh.co.za/index.html">
                   <input type="hidden" name="cancel_url" value="https://wwgh.co.za/billing.html">
                   <input type="hidden" name="notify_url" value="https://wwgh.co.za/index.html">
-                  <input required type="hidden" name="amount" value="405.00">
+                  <input required type="hidden" name="amount" value="450" id="transaction-amount">
                   <input required type="hidden" name="item_name" maxlength="255" value="Room Booking">
                   <button class="submit-btn">Book Now</button>
                 </form>
