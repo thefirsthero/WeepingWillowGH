@@ -71,7 +71,7 @@ function updateChildren() {
 
   if (adults === "1") {
     childrenSelect.disabled = false;
-    childrenSelect.innerHTML = '<option value="" selected hidden>No. of Adults</option>' +
+    childrenSelect.innerHTML = '<option value="" selected hidden>No. of Children</option>' +
       '<option value="0">0</option>' +
       '<option value="1">1</option>' +
       '<option value="2">2</option>';
