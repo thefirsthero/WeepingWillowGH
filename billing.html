@@ -57,17 +57,17 @@
                 <input class="form-control" type="text" placeholder="Select Dates" name="date-range" required>
                 <span class="form-label">Check In - Check out</span>
               </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="form-group">
+                <div class="form-group">
+                  <div class="room-type-container">
                     <span class="form-control room-type-label"></span>
-                    <span class="form-label">Rooms</span>
                   </div>
-                </div>                
+                  <span class="form-label">Rooms</span>
+                </div>
+              <div class="row">                
                 <div class="col-md-4">
                   <div class="form-group">
                     <select class="form-control" required id="adults" onchange="updateChildren()" name="adults">
-                      <option value="" selected hidden>No. of Adults</option>
+                      <option value="" selected hidden>No. of adults</option>
                       <option>1</option>
                       <option>2</option>
                     </select>
@@ -78,7 +78,7 @@
                 <div class="col-md-4">
                   <div class="form-group">
                     <select class="form-control" required id="children" disabled name="children">
-                      <option value="" selected hidden>No. of Children</option>
+                      <option value="" selected hidden>No. of children</option>
                       <option value="0">0</option>
                       <option value="1">1</option>
                     </select>

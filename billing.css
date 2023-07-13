@@ -21,6 +21,17 @@ body {
   margin-top: 60px; /* Add margin to the top */
 }
 
+.room-type-container {
+  display: flex;
+  align-items: center;
+}
+
+.room-type-label {
+  flex-grow: 1;
+  overflow: hidden;
+  /* white-space: nowrap; */
+}
+
 .booking-form {
   position: relative;
   max-width: 642px;
