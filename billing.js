@@ -10,7 +10,6 @@ $(document).ready(function () {
     var fullName = $('input[name="full-name"]').val();
     var email = $('input[name="email"]').val();
     var phone = $('input[name="phone"]').val();
-    var rooms = $('select[name="rooms"]').val();
 
     var isValid = true; // Track overall form validity
 
@@ -26,11 +25,6 @@ $(document).ready(function () {
 
     if (!isValidPhone(phone)) {
       alert('Please enter a valid phone number.');
-      isValid = false;
-    }
-
-    if (!isValidRooms(rooms)) {
-      alert('Please select a valid number of rooms.');
       isValid = false;
     }
 
@@ -71,25 +65,19 @@ function isValidPhone(phone) {
   return phonePattern.test(phone);
 }
 
-// Function to validate number of rooms
-function isValidRooms(rooms) {
-  // Check if the number of rooms is a valid selection
-  return rooms !== "";
-}
-
 function updateChildren() {
   var adults = document.getElementById("adults").value;
   var childrenSelect = document.getElementById("children");
 
   if (adults === "1") {
     childrenSelect.disabled = false;
-    childrenSelect.innerHTML = '<option value="" selected hidden>Number of children</option>' +
+    childrenSelect.innerHTML = '<option value="" selected hidden>No. of Adults</option>' +
       '<option value="0">0</option>' +
       '<option value="1">1</option>' +
       '<option value="2">2</option>';
   } else if (adults === "2") {
     childrenSelect.disabled = false;
-    childrenSelect.innerHTML = '<option value="" selected hidden>Number of children</option>' +
+    childrenSelect.innerHTML = '<option value="" selected hidden>No. of Children</option>' +
       '<option value="0">0</option>' +
       '<option value="1">1</option>';
   }
