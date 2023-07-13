@@ -92,7 +92,7 @@ function updateChildren() {
 }
 
 
-// Function to calculate the price for the room
+// Function to retrieve the room price from the previous screen (local storage) & display it
 function calculateRoomPrice() {
   // Adjust this logic according to your price calculation requirements
   var details = localStorage.getItem('amount');
@@ -102,7 +102,7 @@ function calculateRoomPrice() {
 }
 
 
-// Populate and display the room type based on the selected number of rooms
+// Function to retrieve the room type from the previous screen (local storage) & display it
 function displayRoomType() {
 
   var details = localStorage.getItem('amount');
@@ -116,16 +116,10 @@ function displayRoomType() {
   roomTypeLabel.textContent = roomType;
 }
 
-// Populate and display the room type based on the selected number of rooms
+// Set the payfast room price
 function setRoomPrice() {
 
-  var details = localStorage.getItem('amount');
-  details = JSON.parse(details);
-
-  if (details && details.money) {
-    var transactionAmount = details.money;
-  }
-  console.log(details.money)
+  transactionAmount = calculateRoomPrice()
 
   // Set transaction amount
   $('#transaction-amount').val(transactionAmount);
