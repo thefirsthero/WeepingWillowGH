@@ -104,12 +104,9 @@ function displayRoomType() {
   if (details && details.room) {
     var roomType = details.room;
   }
-  console.log(roomType)
 
   var roomTypeLabel = document.querySelector('.room-type-label');
-  console.log(roomTypeLabel)
   roomTypeLabel.textContent = roomType;
-  console.log(roomType)
 }
 
 // Call the displayRoomType function on page load
