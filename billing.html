@@ -48,79 +48,11 @@
             <div class="form-header">
               <h1>Make your reservation</h1>
             </div>
-            <form id="booking-form" name="PayFastPayNowForm" action="https://www.payfast.co.za/eng/process" method="post">
-              <div class="form-group">
-                <input class="form-control" type="text" placeholder="Name, Surname" name="full-name" required>
-                <span class="form-label">Full name</span>
-              </div>
-              <div class="form-group">
-                <input class="form-control" type="text" placeholder="Select Dates" name="date-range" required>
-                <span class="form-label">Check In - Check out</span>
-              </div>
-              <div class="form-group">
-                <div class="room-type-container">
-                  <span class="form-control room-type-label"></span>
-                </div>
-                <span class="form-label">Rooms</span>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <select class="form-control" required id="adults" onchange="updateChildren()" name="adults">
-                      <option value="" selected hidden>No. of adults</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                    </select>
-                    <span class="select-arrow"></span>
-                    <span class="form-label">Adults</span>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <select class="form-control" required id="children" disabled name="children">
-                      <option value="" selected hidden>No. of children</option>
-                      <option value="0">0</option>
-                      <option value="1">1</option>
-                    </select>
-                    <span class="select-arrow"></span>
-                    <span class="form-label">Children</span>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <span class="form-control room-price-label"></span>
-                    <div class="room-type-container">
-                      <span class="form-label">Room Price</span>
-                    </div>
-                    <span class="price-label" id="room-price"></span>
-                  </div>
-                </div>
-              </div>              
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input class="form-control" type="email" placeholder="Enter your Email" name="email" required>
-                    <span class="form-label">Email</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input class="form-control" type="tel" placeholder="Enter your Phone" name="phone" required>
-                    <span class="form-label">Phone</span>
-                  </div>
-                </div>
-              </div>
-              <div class="form-btn">
-                  <input required type="hidden" name="cmd" value="_paynow">
-                  <input required type="hidden" name="receiver" pattern="[0-9]" value="13215115">
-                  <input type="hidden" name="return_url" value="https://wwgh.co.za/index.html">
-                  <input type="hidden" name="cancel_url" value="https://wwgh.co.za/billing.html">
-                  <input type="hidden" name="notify_url" value="https://wwgh.co.za/index.html">
-                  <input required type="hidden" name="amount" value="450" id="transaction-amount">
-                  <input required type="hidden" name="item_name" maxlength="255" value="Room Booking">
-                  <button class="submit-btn">Book Now</button>
-              </div>
-            </form>
+            <script src="https://bookingmood.com/js/resize.js"></script>
+<iframe
+  src="https://bookingmood.com/embed/4ec092d8-f561-4c5c-b22c-460938534c2d"
+  style="width:100%;border:none"
+></iframe>
           </div>
         </div>
       </div>
