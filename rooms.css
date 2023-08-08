@@ -23,14 +23,6 @@ ul {
   padding: 0;
 }
 
-/* li {
-  display: inline;
-  margin-left: 40px;
-  padding-top: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-} */
-
 a {
   color: whitesmoke;
 }
@@ -104,19 +96,24 @@ a {
   border: rgb(65, 62, 62);
 }
 
-/* .gradient {
-  background-image: linear-gradient(
-    to right,
-    #314755 0%,
-    #26a0da 51%,
-    #314755 100%
-  );
-}
-.btn-grad:hover {
-  background-position: right center;
-} */
-
 .names {
   font-family: cursive;
   color: blanchedalmond;
 }
+
+.card-img-top {
+	height: 200px;
+	object-fit: cover;
+  }
+
+  .smaller-image {
+	width: 50%;
+	height: auto;
+  }
+
+  /* Logo styling */
+  .navbar-logo {
+	max-width: 40px; /* Adjust the size as needed */
+	height: auto;   /* Maintain aspect ratio */
+	margin-right: 0px; /* Add spacing between logo and text */
+  }
