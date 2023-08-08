@@ -36,9 +36,11 @@ a {
 .fa-fb {
   color: #3b5998;
 }
+
 .fa-tw {
   color: #00acee;
 }
+
 .fa-y {
   color: #0e76a8;
 }
@@ -102,18 +104,21 @@ a {
 }
 
 .card-img-top {
-	height: 200px;
-	object-fit: cover;
-  }
+  height: 200px;
+  object-fit: cover;
+}
 
-  .smaller-image {
-	width: 50%;
-	height: auto;
-  }
+.smaller-image {
+  width: 50%;
+  height: auto;
+}
 
-  /* Logo styling */
-  .navbar-logo {
-	max-width: 40px; /* Adjust the size as needed */
-	height: auto;   /* Maintain aspect ratio */
-	margin-right: 0px; /* Add spacing between logo and text */
-  }
+/* Logo styling */
+.navbar-logo {
+  max-width: 30px;
+  /* Adjust the size as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-right: 10px;
+  /* Add spacing between logo and text */
+}
