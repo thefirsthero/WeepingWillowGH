@@ -1,3 +1,13 @@
+/* Logo styling */
+.navbar-logo {
+  max-width: 30px;
+  /* Adjust the size as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-right: 10px;
+  /* Add spacing between logo and text */
+}
+
 .roombg {
   height: 400px;
   background-image: url(Resources/bradcam2.png);
@@ -25,12 +35,6 @@ ul {
 
 a {
   color: whitesmoke;
-}
-
-.logo {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
 }
 
 .fa-fb {
@@ -111,14 +115,4 @@ a {
 .smaller-image {
   width: 50%;
   height: auto;
-}
-
-/* Logo styling */
-.navbar-logo {
-  max-width: 30px;
-  /* Adjust the size as needed */
-  height: auto;
-  /* Maintain aspect ratio */
-  margin-right: 10px;
-  /* Add spacing between logo and text */
 }
