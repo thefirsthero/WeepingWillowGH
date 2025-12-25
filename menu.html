@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weeping Willow Guest House</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+Vztc5JwU6tS5fP5rNU6hIbbVYoojByM+HT4B1w1b0UIqce" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="blog.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="Resources/logo.png" alt="Weeping Willow Logo" class="navbar-logo">
+      Weeping Willow
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rooms.html">Rooms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Reviews</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Menu -->
+<section id="menu" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase mb-4">Our Menu</h2>
+        </div>
+        <div class="col-lg-12 text-center">
+          <h5 class="menu-list-title">All orders are to be placed in the mornings by 9 am for both lunch and dinner.<br>All meals are R145 each.<br>NB: Rice can be substituted for potatoes.</h5>
+        </div>
+        <div class="col-lg-12 text-center">
+          <h6>There is a choice of seasonal mixed vegetables or garden salad, a roll and butter is included in the meal.</h6>
+        </div>
+      </div>
+      <!-- Spacer -->
+      <div style="height: 40px;"></div>
+      <!-- Carousel and Text-based Menu -->
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div id="menuCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel content here -->
+            <ol class="carousel-indicators">
+              <li data-target="#menuCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#menuCarousel" data-slide-to="1"></li>
+              <li data-target="#menuCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Resources/Index/Services/Food/1.jpg" class="d-block w-100 menu-carousel-img" alt="Menu Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="Resources/Index/Services/Food/2.jpg" class="d-block w-100 menu-carousel-img" alt="Menu Slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="Resources/Index/Services/Food/3.jpg" class="d-block w-100 menu-carousel-img" alt="Menu Slide 3">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#menuCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#menuCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="menu-list">
+            <h3 class="menu-list-title">Lunch & Supper</h3>
+            <ul class="list-unstyled">
+              <li class="menu-item">Teriyaki beef stir-fry OR Pan fried dukka chicken breast with baby potatoes - <b>R145</b></li>
+              <li class="menu-item">Pork sausage ‘n mash with onion gravy OR Beef Chilli served in a steamed half butternut - <b>R145</b></li>
+              <li class="menu-item">Chicken, Mushroom & Broccoli Cottage Pie with Fresh Rolls OR Falafel Schwarma served with fresh salad - <b>R145</b></li>
+              <li class="menu-item">Grilled fish with baby potatoes OR Spaghetti ‘n Meatballs - <b>R145</b></li>
+              <li class="menu-item">Mutton Casserole with Mash OR Homemade Bacon ‘n Cheese Burger with Potato Wedges - <b>R145</b></li>
+              <li class="menu-item">Roast Beef Poorboy Sandwich with Potato Wedges OR Chicken Curry Bunny Chow - <b>R145</b></li>
+              <!-- Add more menu items here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .menu-list-title {
+      margin-bottom: 1.5rem;
+    }
+    
+    .menu-carousel-img {
+      max-height: 400px; /* Set the desired height for carousel images */
+      object-fit: cover; /* Maintain image aspect ratio */
+    }
+  
+    .menu-list ul {
+      padding-left: 0rem; /* Add padding to menu items */
+    }
+  
+    .menu-item {
+      margin-bottom: 0.5rem; /* Add space between menu items */
+    }
+  </style>
+  
+  
+  
+  
+
+
+  <!-- Footer -->
+  <footer class="mt-5">
+    <div class="container">
+      <p class="text-center">&copy; 2023 Weeping Willow Guest House. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://static.elfsight.com/platform/platform.js" defer></script>
+</body>
+
+</html>
